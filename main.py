@@ -12,7 +12,7 @@ app = FastAPI()
 # ✅ Add this block right after creating `app`
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://web-ar-frontend-e3ahvy28y-sirliboyevuzs-projects.vercel.app/"],  # React dev server
+    allow_origins=["https://web-ar-frontend-git-main-sirliboyevuzs-projects.vercel.app/"],  # React dev server
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
