@@ -10,9 +10,14 @@ import uuid
 app = FastAPI()
 
 # ✅ Add this block right after creating `app`
+origins = [
+    "https://web-ar-frontend-git-main-sirliboyevuzs-projects.vercel.app",
+    "http://localhost:5173",  # optional for local dev
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://web-ar-frontend-git-main-sirliboyevuzs-projects.vercel.app/"],  # React dev server
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
